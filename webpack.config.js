@@ -5,5 +5,10 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'Client/dist')
+  },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.common.js'
+         }
   }
 };

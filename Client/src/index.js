@@ -1,12 +1,18 @@
- var Vue = require('vue');
+const Vue = require('vue');
 
 
  var app = new Vue({
      el: '#app',
-     data: {text: 'foo'}
+     data: {text: 'foo'},
+     methods : {call}
+     
 
  });
 
- var text = require('./example');
+ function call(){
+     alert('ok');
+ }
 
-document.write(text);
+ //var text = require('./example');
+
+//document.write(text);
